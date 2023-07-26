@@ -1,0 +1,14 @@
+name: credit_card_conda
+dependencies:
+  - python==3.10
+  - pip
+  - scikit-learn
+  - scipy
+  - pandas
+  - pip:
+    - xlrd
+    - azureml-mlflow
+    - psutil
+    - ipykernel
+    - matplotlib
+    - mltable

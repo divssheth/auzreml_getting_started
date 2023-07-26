@@ -1,0 +1,14 @@
+$schema: https://azuremlschemas.azureedge.net/latest/managedOnlineDeployment.schema.json
+name: blue
+endpoint_name: my--first-example-endpoint
+model: azureml:my-first-example:1 
+instance_type: Standard_D2as_v4
+instance_count: 1
+environment_variables:
+  MLFLOW_MODEL_FOLDER: model
+data_collector:
+  collections:
+    model_inputs:
+      enabled: "true"
+    model_outputs:
+      enabled: "true"

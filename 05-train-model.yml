@@ -1,0 +1,15 @@
+$schema: https://azuremlschemas.azureedge.net/latest/commandJob.schema.json
+code: src
+command: >-
+  python train.py 
+  --input_csv ${{inputs.input_csv}}
+inputs:
+  input_csv: 
+    type: mltable
+    path: azureml:credit-card-mltable:1
+    #path: azureml://subscriptions/19fa232e-edc5-48fc-812a-b2d61c84b80b/resourcegroups/divye-playground/workspaces/divye-playground-aml/datastores/workspaceblobstore/paths/LocalUpload/82691cd28a383ae3d393cde7608ad8c6/data/default_of_credit_card_clients.csv
+compute: azureml:cpu-cluster
+display_name: my-first-example
+experiment_name: my-first-example
+description: My first example.
+environment: azureml:docker-image-plus-conda-example@latest
