@@ -35,8 +35,8 @@ Same as exercise 1
 
 ## Exercise 7 - Create endpoint
 1. Explore and edit the create-endpoint.yml file
-2. Create an endpoint using CLI. `az ml endpoint create --file 06-create-endpoint.yml`
+2. Create an endpoint using CLI. `az ml online-endpoint create --file 06-create-endpoint.yml`
 
 ## Exercise 8 - Create endpoint
 1. Explore and edit the create-deployment.yml file
-2. Create an deployment using CLI. `az ml endpoint create --file 07-create-deployment.yml`
+2. Create an deployment using CLI. `az ml online-deployment create --file 07-create-deployment.yml`
